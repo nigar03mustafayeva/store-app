@@ -1,0 +1,14 @@
+label {
+    display: block;
+    margin-bottom: 3rem; 
+}
+
+button {
+    padding: 12px 24px;  
+    font-size: 1.2rem;    
+    width: 10%;          
+    cursor: pointer;      
+    border-radius: 6px;  
+}
+  
+  

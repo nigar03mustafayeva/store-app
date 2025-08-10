@@ -1,0 +1,19 @@
+<div class="menu"> 
+  <ul>
+      <li><button (click)="goHome()" class="nav-btn">Ana Səhifə</button></li>
+      <li><button (click)="goToContact()" class="nav-btn">Əlaqə</button></li>
+      <li><button (click)="goToAddProduct()" class="nav-btn">Yeni Məhsul Əlavə Et</button></li>
+      <li><button (click)="goToCart()">Səbət</button></li>
+  </ul>
+
+  <div class="search-container">
+    <input
+      type="text"
+      placeholder="Axtar..."
+      [(ngModel)]="searchQuery"
+      (keyup.enter)="onSearch()"
+      aria-label="Search"
+    />
+    <button (click)="onSearch()">🔍</button>
+  </div>
+</div>

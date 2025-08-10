@@ -1,0 +1,31 @@
+<h2>Yeni Məhsul Əlavə Et</h2>
+
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+
+  <label>
+    Başlıq :
+    <input formControlName="title" type="text" />
+  </label>
+
+  <label>
+    Qiymət :
+    <input formControlName="price" type="number" min="0" />
+  </label>
+
+  <label>
+    Təsvir :
+    <textarea formControlName="description"></textarea>
+  </label>
+
+  <label>
+    Şəkil URL :
+    <input formControlName="image" type="url" />
+  </label>
+
+  <label>
+    Kateqoriya :
+    <input formControlName="category" type="text" />
+  </label>
+
+  <button type="submit" [disabled]="productForm.invalid">Əlavə et</button>
+</form>

@@ -1,0 +1,11 @@
+<div class="smth" *ngIf="product">
+    <img class="image" [src]="product.image" width="300" />
+    <div class="product-details">
+      <h2>{{ product.title }}</h2>
+      <p>{{ product.description }}</p>
+      <p>Qiymət: ${{ product.price }}</p>
+      <button (click)="addToCart()">Səbətə əlavə et</button>
+      <br>
+      <button routerLink="/">← Geri qayıt</button>
+    </div>
+</div>

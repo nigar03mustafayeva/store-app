@@ -1,0 +1,16 @@
+<h2>Səbət</h2>
+
+<div *ngIf="cartItems.length === 0">
+  Səbət boşdur.
+</div>
+
+<div *ngFor="let item of cartItems" class="cart-item">
+  <img [src]="item.image" alt="{{ item.title }}" width="70" />
+  <span> {{ item.title }}</span>
+  <span> | Qiymət: ${{ item.price }}</span>
+  <button (click)="removeItem(item.id)"> Səbətdən sil</button>
+</div>
+
+<hr>
+
+<h3>Ümumi qiymət: ${{ totalPrice }}</h3>
